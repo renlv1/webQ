@@ -1,0 +1,294 @@
+.ourteam-container .swiper-wrapper{
+  display: flex;
+  padding-left: 10px;
+  width: 100%;
+}
+.ourteam-container .slide-item{
+  width: 360px;
+  box-sizing: border-box;
+  padding: 0 37px;
+}
+.ourteam-container .swiper-slide-active .is-hidden {
+  display: block !important;
+  height auto !important
+}
+.ourteam-container .swiper-slide-active .is-hidden::after{
+  display none
+}
+.ourteam-container .swiper-slide-active .desc{
+  //display: -webkit-box;
+  //-webkit-box-orient: vertical;
+  //-webkit-line-clamp: 7;
+  //overflow: hidden;
+}
+.ourteam-container .swiper-slide.swiper-slide-active .slide-item .look-info{
+  display: block !important;
+}
+.ourteam-container .swiper-slide .slide-item .look-info.isblock {
+  display: none !important;
+}
+.ourteam-container .swiper-slide.swiper-slide-active .slide-item .img-box img{
+  //width: 164px;
+  //height: 164px;
+}
+.mobile-wrapper .swiper-wrapper{
+  padding-left: 0;
+}
+.ourteam-container .swiper-button-disabled{
+  display: none !important;
+}
+.mobile-wrapper .swiper-pagination{
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.mobile-wrapper .swiper-pagination-bullet{
+  margin: 0 5px;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+}
+.mobile-wrapper .slide-item{
+  width: 340px;
+}
+.mobile-wrapper .swiper-pagination-bullet-active{
+  background: #f2bb24;
+  opacity: 1;
+}
+.assetRecite-swiper .swiper-wrapper{
+  display: flex;
+}
+.wiki-swiper .swiper-wrapper{
+  display: flex;
+}
+  //首页new
+.home .newsSwiper .swiper-pagination{
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.home .newsSwiper .swiper-pagination-bullet{
+  margin: 0 5px;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+}
+.home .newsSwiper .swiper-pagination-bullet-active{
+  background: #f2bb24;
+  opacity: 1;
+}
+  //首页swiper
+  .home
+    .ourteam-container
+      .swiper-slide
+        height 510px
+$f2bb24 = #f2bb24
+.ourteam-container
+  margin: 162px 0 198px
+  .wrapper
+    width 1260px
+    position: relative
+    left 50%
+    transform translateX(-50%)
+    margin-left: 20px
+    .swiper-container-horizontal
+      overflow: hidden
+  @media screen and (max-width: 1400px)
+    .pc-wrapper
+      display none
+    .mobile-wrapper
+      margin: 0 auto
+      display block
+      width: 340px
+      margin-left: 0
+      .swiper-slide
+        width: 340px !important
+        margin-right: 0
+        box-shadow none !important
+        border-top: 6px solid #f2bb24;
+        border-bottom: 6px solid #f2bb24;
+        border-left: 1px solid rgba(0,0,0,.1)
+        border-right: 1px solid rgba(0,0,0,.1)
+      .swiper-button-next
+        right: -60px !important
+  @media screen and (min-width: 1400px)
+    .mobile-wrapper
+      display none
+    .pc-wrapper
+      display block
+  .container-title
+    font-size: 67px
+    color #333
+    line-height: 1
+    text-align: center
+    margin-bottom: 146px
+    @media screen and (max-width: 600px)
+      font-size: 30px
+  .swiper-slide
+    flex: 1;
+    -ms-flex: 0 0 auto;
+    //IEdiezaiyiqi
+    box-sizing border-box
+    width: 360px !important
+    height: 720px
+    display flex
+    flex-direction column
+    align-items center
+    margin-right: 60px
+    transition all .2s linear
+    cursor pointer
+    .img-w
+      height: 164px
+      margin: 60px auto 30px;
+      display flex
+      align-items center
+      justify-content center
+      &.none-img
+        height: 0 !important
+        width: 0 !important
+        transition all .2s linear
+    &:hover
+      border-top: 6px solid #f2bb24;
+      border-bottom: 6px solid #f2bb24;
+      box-shadow: 5px 5px 30px rgba(0,0,0,.1);
+    &.active-slide
+      border-top: 6px solid #f2bb24;
+      border-bottom: 6px solid #f2bb24;
+      box-shadow: 5px 5px 30px rgba(0,0,0,.1);
+      .img-box
+        width: 164px
+        height: 164px
+        background-color: #d9ab2b
+        display flex
+        align-items center
+        justify-content center
+        &::before
+          content ''
+          display block
+          width: 80px
+          height: 80px
+          background: url("../images/team/b88.svg") no-repeat center / cover
+        img
+          display none
+          //width: 80px
+          //height: 80px
+      .desc
+        //display: -webkit-box;
+        //-webkit-box-orient: vertical;
+        //-webkit-line-clamp: 7;
+        //-ms-box-orident: vertical;
+        //-ms-line-clamp: 7;
+        //-o-text-overflow: ellipsis;
+        height: 166px
+        overflow: hidden;
+        //text-overflow: ellipsis;
+        //word-wrap:break-word;
+        //zoom 1
+        position: relative
+        &::after
+          content '...'
+          position: absolute
+          bottom: 0
+          right: 0
+      .look-info
+        display block
+      .is-hidden
+        display block !important
+        height auto !important
+        &::after
+          display none
+    .img-box
+      width: 130px
+      height: 130px
+      display flex
+      align-items center
+      justify-content center
+      background-color: #333333
+      border-radius 50%
+      &.none-img
+        height: 0 !important
+        width: 0 !important
+        transition all .2s linear
+        img
+          width: 0 !important
+          height: 0 !important
+      img
+        width: 60px !important
+        height: 60px !important
+    .pople-name
+      font-size: 20px
+      font-weight bold
+      color #333
+      text-align: center
+    .name-desc
+      font-size: 16px
+      color #999
+      margin-bottom: 22px
+      margin-top: 18px
+      text-align: center
+    .name-wrapper
+      border-top: 1px solid #ccc
+      .desc
+        line-height: 1.5
+        color #999
+        width: 100%
+        height: 166px
+        font-size: 16px
+        margin: 40px auto 62px
+        //display: -webkit-box;
+        //-webkit-box-orient: vertical;
+        //-ms-box-orident: vertical;
+        //-webkit-line-clamp: 7;
+        //-ms-line-clamp: 7;
+        //-o-text-overflow: ellipsis;
+        //word-wrap:break-word;
+        overflow: hidden;
+        //zoom 1
+        //text-overflow: ellipsis;
+        position: relative
+        &::after
+          content '...'
+          position: absolute
+          bottom: 0
+          right: 0
+    .look-info
+      color $f2bb24
+      cursor pointer
+      font-size: 18px
+      text-align: center
+      &.isblock
+        display none !important
+  .swiper-button-next,.swiper-button-prev
+    width: 50px
+    height: 50px
+    position: absolute
+    top: 50%
+    transform translateY(-50%)
+    display block
+    cursor pointer
+    &.swiper-button-next
+      right: -45px
+      background: url("../../assets/images/team/arrow-right.svg") no-repeat
+    &.swiper-button-prev
+      left: -86px
+      background: url("../../assets/images/team/arrow-left.svg") no-repeat
+.ourteam-container .mobile-wrapper .swiper-slide .slide-item .img-box img
+  width: 80px
+  height: 80px
+.ourteam-container .mobile-wrapper  .swiper-slide .slide-item .img-box
+  width: 164px
+  height: 164px
+  margin: 60px auto 30px
+  background: #d9ab2b

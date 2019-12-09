@@ -1,0 +1,241 @@
+/*公告样式*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  list-style: none;
+  box-sizing: border-box;
+}
+/*lin-common */
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header .wrap .nav .nav-li .nav-li-a.router-link-active {
+  color: #d9ab2b !important;
+  font-weight: bold;
+}
+.header .wrap .nav .nav-li .nav-li-a.router-link-active:after{
+  content: '';
+  width: 140%;
+  height: 2px;
+  background-color: #d9ab2b;
+  position: absolute;
+  left: -20%;
+  bottom: -8px;
+}
+@media screen and (max-width: 768px) {
+  .header .wrap .nav .nav-li .nav-li-a.router-link-active:after{
+    content: none
+  }
+}
+.header .wrap .nav .nav-li .nav-li-a.routeLinkActive {
+  color: #d9ab2b!important;
+  font-weight: bold;
+}
+.header .wrap .nav .nav-li .nav-li-a.routeLinkActive .dropdown-img{
+  background: url("../../assets/images/header/dropDown_y.png") no-repeat;
+}
+.header .wrap .nav .nav-li .nav-li-a.routeLinkActive:after{
+  content: '';
+  width: 140%;
+  height: 2px;
+  background-color: #d9ab2b;
+  position: absolute;
+  left: -20%;
+  bottom: -8px;
+}
+@media screen and (max-width: 768px) {
+  .header .wrap .nav .nav-li .nav-li-a.routeLinkActive:after{
+    content: none;
+  }
+}
+/*首页swiper*/
+.home .swiper-wrapper{
+  display: flex;
+}
+.home .slide-item{
+  width: 360px;
+  box-sizing: border-box;
+  padding: 0 37px;
+}
+/*字体*/
+@font-face {
+  font-family: PTSansRegular;
+  src: url("../fonts/PTSansRegular-ext.ttf");
+}
+body {
+  font-family: PTSansRegular;
+  background-color: #fff;
+  -webkit-tap-highlight-color:transparent;
+}
+body.yahei {
+  font-family: "Microsoft YaHei UI";
+}
+#app {
+  overflow: hidden;
+}
+/*lin-common */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+em, i {
+  font-style: normal;
+}
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+input, button {
+  outline: none;
+}
+.wrap{
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1160px) {
+  .wrap{
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.ourteam-container .swiper-wrapper{
+  display: flex;
+  padding-left: 10px;
+  width: 100%;
+}
+.ourteam-container .slide-item{
+  width: 360px;
+  box-sizing: border-box;
+  padding: 0 37px;
+}
+.ourteam-container .swiper-slide-active .is-hidden {
+  display: block !important;
+}
+.ourteam-container .swiper-slide-active .desc{
+  /*display: -webkit-box;*/
+  /*-webkit-box-orient: vertical;*/
+  /*-webkit-line-clamp: 7;*/
+  /*overflow: hidden;*/
+}
+.ourteam-container .swiper-slide.swiper-slide-active .slide-item .look-info{
+  display: block !important;
+}
+.ourteam-container .swiper-slide .look-info.isblock {
+  display: none !important;
+}
+.ourteam-container .swiper-slide.swiper-slide-active .slide-item .img-box img{
+  width: 164px;
+  height: 164px;
+}
+.mobile-wrapper .swiper-wrapper{
+  padding-left: 0;
+}
+.ourteam-container .swiper-button-disabled{
+  display: none !important;
+}
+.mobile-wrapper .swiper-pagination{
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.mobile-wrapper .swiper-pagination-bullet{
+  margin: 0 5px;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+}
+.mobile-wrapper .slide-item{
+  width: 340px;
+}
+.mobile-wrapper .swiper-pagination-bullet-active{
+  background: #f2bb24;
+  opacity: 1;
+}
+.assetRecite-swiper .swiper-wrapper{
+  display: flex;
+}
+.assetRecite-swiper .swiper-pagination-bullet{
+  margin: 0px 5px;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+}
+.assetRecite-swiper .swiper-pagination-bullet-active{
+  background-color: #f2bb24;
+  opacity: 1;
+}
+.wiki-swiper .swiper-pagination-bullet{
+  margin: 0px 5px;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: .2;
+}
+.wiki-swiper .swiper-pagination-bullet-active{
+  background-color: #f2bb24;
+  opacity: 1;
+}
+.wiki-swiper .swiper-wrapper{
+  display: flex;
+}
+.wiki-swiper .swiper-wrapper .swiper-slide{
+  flex: 1;
+  -ms-flex: 0 0 auto;
+}
+/*样式重置结束*/
+@keyframes feadInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes feadInUp2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

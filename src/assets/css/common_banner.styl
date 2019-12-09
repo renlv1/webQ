@@ -1,0 +1,119 @@
+.banner
+  width 100%
+  height 600px
+  background-color #171718
+  position relative
+  @media screen and (max-width 1200px)
+    margin-top 106px
+  @media screen and (max-width 768px)
+    margin-top 60px
+  .banner-bg
+    width 100%
+    height 600px
+    position absolute
+    top 0px
+    left 0px
+    background url("../../assets/images/common/banner-quan.png") no-repeat center
+    @media screen and (max-width 1200px)
+      padding-left 15px
+      padding-right 15px
+    .banner-conbox
+      width 1200px
+      margin 0 auto
+      height 100%
+      display flex
+      box-align center
+      flex-align center
+      align-items center
+      box-pack justify
+      flex-pack justify
+      justify-content space-between
+      @media screen and (max-width 1200px)
+        display block
+        flex none
+        width 100%
+        padding 0px 15px
+        height 100%
+      .banner-conl
+        width auto
+        @media screen and (max-width 1200px)
+          display block
+          flex none
+          width 100%
+          margin 20px auto 0px
+          text-align center
+        .banner-title
+          font-size 32px
+          font-weight bold
+          color #fff
+          font-weight bold
+          @media screen and (max-width 1200px)
+            font-size 26px
+            color #fff
+          .banner-jiazhi
+            color #d9ab2b
+        .banner-p
+          width 480px
+          margin 0px auto
+          color #fff
+          font-size 16px
+          line-height 30px
+          word-break break-all
+          padding 30px 0px 96px
+          @media screen and (max-width 1024px)
+            width 87%
+            text-align center
+            margin 0px auto
+        .banner-hr
+          width 64px
+          height 2px
+          background-color #D9AB2B
+          @media screen and (max-width 1200px)
+            margin 0px auto
+      .banner-conr
+        width auto
+        @media screen and (max-width 1200px)
+          display block
+          width 500px
+          margin 0px auto
+          float none
+          @media screen and (max-width 500px)
+            width 100%
+        .banner-img
+          width 488px
+          height 328px
+          float right
+          padding-right 16px
+          display flex
+          box-align center
+          flex-align center
+          align-items center
+          @media screen and (max-width 1200px)
+            width 90%
+            height auto
+            float none
+            margin 30px auto
+            padding-right 0px
+          img
+            display block
+            width 100%
+            height 100%
+//首页banner
+.home
+  .banner
+    .swiper-container
+      width 100%
+      height 680px
+      overflow hidden
+      .swiper-wrapper
+        height 100%
+        padding-left 0
+        .swiper-slide
+          background url("../../assets/images/home/banner2.jpg") no-repeat
+          background-size cover!important
+          //&:nth-child(2)
+          //  background url("../../assets/images/home/banner2.jpg") no-repeat
+          //&:nth-child(3)
+          //  background url("../../assets/images/home/banner3.jpg") no-repeat
+          //&:nth-child(5)
+          //  background url("../../assets/images/home/banner2.jpg") no-repeat
